@@ -1,6 +1,6 @@
 <?php
 
-namespace addons\RfMerchants\html5\controllers;
+namespace addons\Merchants\html5\controllers;
 
 use Yii;
 use common\controllers\AddonsController;
@@ -9,7 +9,7 @@ use common\controllers\AddonsController;
  * 默认控制器
  *
  * Class DefaultController
- * @package addons\RfMerchants\html5\controllers
+ * @package addons\Merchants\html5\controllers
  */
 class DefaultController extends BaseController
 {

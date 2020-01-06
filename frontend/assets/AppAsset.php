@@ -1,6 +1,6 @@
 <?php
 
-namespace addons\RfMerchants\frontend\assets;
+namespace addons\Merchants\frontend\assets;
 
 use yii\web\AssetBundle;
 
@@ -8,14 +8,14 @@ use yii\web\AssetBundle;
  * 静态资源管理
  *
  * Class AppAsset
- * @package addons\RfMerchants\frontend\assets
+ * @package addons\Merchants\frontend\assets
  */
 class AppAsset extends AssetBundle
 {
     /**
      * @var string
      */
-    public $sourcePath = '@addons/RfMerchants/frontend/resources/';
+    public $sourcePath = '@addons/Merchants/frontend/resources/';
 
     public $css = [
     ];

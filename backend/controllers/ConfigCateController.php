@@ -1,16 +1,16 @@
 <?php
 
-namespace addons\RfMerchants\backend\controllers;
+namespace addons\Merchants\backend\controllers;
 
 use Yii;
 use yii\data\ActiveDataProvider;
-use common\components\Curd;
+use common\traits\Curd;
 use common\enums\AppEnum;
 use common\models\common\ConfigCate;
 
 /**
  * Class ConfigCateController
- * @package addons\RfMerchants\backend\controllers
+ * @package addons\Merchants\backend\controllers
  * @author jianyan74 <751393839@qq.com>
  */
 class ConfigCateController extends BaseController

@@ -1,6 +1,6 @@
 <?php
 
-namespace addons\Merchants\merchant\controllers;
+namespace addons\Merchants\backend\controllers;
 
 use Yii;
 use common\controllers\AddonsController;
@@ -9,7 +9,7 @@ use common\controllers\AddonsController;
  * 默认控制器
  *
  * Class DefaultController
- * @package addons\Merchants\merchant\controllers
+ * @package addons\Merchants\backend\controllers
  */
 class DefaultController extends BaseController
 {

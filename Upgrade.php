@@ -1,6 +1,6 @@
 <?php
 
-namespace addons\RfMerchants;
+namespace addons\Merchants;
 
 use Yii;
 use yii\db\Migration;
@@ -10,7 +10,7 @@ use common\interfaces\AddonWidget;
  * 升级数据库
  *
  * Class Upgrade
- * @package addons\RfMerchants */
+ * @package addons\Merchants */
 class Upgrade extends Migration implements AddonWidget
 {
     /**

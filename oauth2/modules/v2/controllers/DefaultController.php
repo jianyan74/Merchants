@@ -1,6 +1,6 @@
 <?php
 
-namespace addons\Merchants\oauth2\controllers;
+namespace addons\Merchants\oauth2\modules\v2\controllers;
 
 use Yii;
 use oauth2\controllers\OnAuthController;
@@ -9,7 +9,7 @@ use oauth2\controllers\OnAuthController;
  * 默认控制器
  *
  * Class DefaultController
- * @package addons\Merchants\oauth2\controllers
+ * @package addons\Merchants\oauth2\modules\v2\controllers
  */
 class DefaultController extends OnAuthController
 {

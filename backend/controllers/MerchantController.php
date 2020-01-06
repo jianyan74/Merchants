@@ -1,16 +1,16 @@
 <?php
 
-namespace addons\RfMerchants\backend\controllers;
+namespace addons\Merchants\backend\controllers;
 
 use Yii;
 use common\enums\StatusEnum;
 use common\models\base\SearchModel;
-use common\components\Curd;
+use common\traits\Curd;
 use common\models\merchant\Merchant;
 
 /**
  * Class MerchantController
- * @package addons\RfMerchants\backend\controllers
+ * @package addons\Merchants\backend\controllers
  * @author jianyan74 <751393839@qq.com>
  */
 class MerchantController extends BaseController

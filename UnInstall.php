@@ -1,22 +1,22 @@
 <?php
 
-namespace addons\RfMerchants;
+namespace addons\Merchants;
 
-use common\models\common\ConfigValue;
 use yii\db\Migration;
 use common\enums\AppEnum;
-use common\models\common\AuthRole;
 use common\models\common\AuthItemChild;
-use common\helpers\MigrateHelper;
-use common\interfaces\AddonWidget;
+use common\models\common\AuthRole;
+use common\models\common\ConfigValue;
 use common\models\merchant\Member;
 use common\models\merchant\Merchant;
+use common\helpers\MigrateHelper;
+use common\interfaces\AddonWidget;
 
 /**
  * 卸载
  *
  * Class UnInstall
- * @package addons\RfMerchants
+ * @package addons\Merchants
  */
 class UnInstall extends Migration implements AddonWidget
 {
@@ -40,8 +40,8 @@ class UnInstall extends Migration implements AddonWidget
         // 清理配置
         ConfigValue::deleteAll(['>', 'merchant_id', 1]);
 
-//         MigrateHelper::downByPath([
-//             '@addons/RfMerchants/console/migrations/'
-//         ]);
+        // MigrateHelper::downByPath([
+        //     '@addons/Merchants/console/migrations/'
+        // ]);
     }
 }

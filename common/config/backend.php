@@ -1,6 +1,19 @@
 <?php
 
 return [
+
+    // ----------------------- 菜单配置 ----------------------- //
+    'config' => [
+        // 菜单配置
+        'menu' => [
+            'location' => 'default', // default:系统顶部菜单;addons:应用中心菜单
+            'icon' => 'fa fa-user-plus',
+        ],
+        // 子模块配置
+        'modules' => [
+        ],
+    ],
+
     // ----------------------- 权限配置 ----------------------- //
 
     'authItem' => [
@@ -46,10 +59,6 @@ return [
     ],
 
     // ----------------------- 菜单配置 ----------------------- //
-    'menuConfig' => [
-         'location' => 'default', // default:系统顶部菜单;addons:应用中心菜单
-         'icon' => 'fa fa-mortar-board',
-    ],
 
     'menu' => [
         [

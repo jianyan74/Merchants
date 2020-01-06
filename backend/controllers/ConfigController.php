@@ -1,19 +1,19 @@
 <?php
 
-namespace addons\RfMerchants\backend\controllers;
+namespace addons\Merchants\backend\controllers;
 
 use Yii;
 use yii\web\NotFoundHttpException;
 use common\enums\StatusEnum;
 use common\models\base\SearchModel;
 use common\models\common\Config;
-use common\components\Curd;
+use common\traits\Curd;
 use common\enums\ConfigTypeEnum;
 use common\enums\AppEnum;
 
 /**
  * Class ConfigController
- * @package addons\RfMerchants\backend\controllers
+ * @package addons\Merchants\backend\controllers
  * @author jianyan74 <751393839@qq.com>
  */
 class ConfigController extends BaseController

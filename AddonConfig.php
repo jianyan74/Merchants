@@ -1,14 +1,15 @@
 <?php
 
-namespace addons\RfMerchants;
+namespace addons\Merchants;
 
-use addons\RfMerchants\common\components\Bootstrap;
+use common\components\BaseAddonConfig;
+use addons\Merchants\common\components\Bootstrap;
 
 /**
  * Class Addon
- * @package addons\RfMerchants
+ * @package addons\Merchants
  */
-class AddonConfig
+class AddonConfig extends BaseAddonConfig
 {
     /**
      * 基础信息
@@ -16,8 +17,8 @@ class AddonConfig
      * @var array
      */
     public $info = [
-        'name' => 'RfMerchants',
-        'title' => '商家管理',
+        'name' => 'Merchants',
+        'title' => '商户管理',
         'brief_introduction' => '商家基础管理',
         'description' => '管理商家权限、商家菜单、商家配置等',
         'author' => '简言',
@@ -37,6 +38,7 @@ class AddonConfig
         'merchant' => 'common/config/merchant.php',
         'html5' => 'common/config/html5.php',
         'api' => 'common/config/api.php',
+        'oauth2' => 'common/config/oauth2.php',
     ];
 
     /**
@@ -46,7 +48,24 @@ class AddonConfig
     *
     * @var Bootstrap
     */
-    public $bootstrap = Bootstrap::class;
+    public $bootstrap = '';
+
+    /**
+    * 服务层
+    *
+    * 设置后系统会自动注册
+    *
+    * 调用方式
+    *
+    * Yii::$app->插件名称 + Services
+    *
+    * 例如
+    *
+    * Yii::$app->tinyShopServices;
+    *
+    * @var string
+    */
+    public $service = '';
 
     /**
      * 参数配置开启
@@ -56,13 +75,6 @@ class AddonConfig
     public $isSetting = false;
 
     /**
-     * 钩子开启
-     *
-     * @var bool
-     */
-    public $isHook = false;
-
-    /**
      * 规则管理开启
      *
      * @var bool
@@ -70,12 +82,12 @@ class AddonConfig
     public $isRule = false;
 
     /**
-     * 商户路由映射
-     *
-     * 开启后无需再去商户应用端去开发程序，直接映射后台应用的控制器方法过去，菜单权限还需要单独配置
-     *
-     * @var bool
-     */
+    * 商户路由映射
+    *
+    * 开启后无需再去商户应用端去开发程序，直接映射后台应用的控制器方法过去，菜单权限还需要单独配置
+    *
+    * @var bool
+    */
     public $isMerchantRouteMap = false;
 
     /**

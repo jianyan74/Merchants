@@ -1,13 +1,13 @@
 <?php
 
-namespace addons\RfMerchants\backend\controllers;
+namespace addons\Merchants\backend\controllers;
 
 use Yii;
 use yii\data\ActiveDataProvider;
-use common\components\Curd;
+use common\traits\Curd;
 use common\enums\StatusEnum;
 use common\enums\AppEnum;
-use common\enums\TypeEnum;
+use common\enums\WhetherEnum;
 use common\models\common\AuthItem;
 
 /**
@@ -38,7 +38,7 @@ class AuthItemController extends BaseController
     public function actionIndex()
     {
         $query = $this->modelClass::find()
-            ->where(['app_id' => $this->appId, 'type' => TypeEnum::DEFAULT])
+            ->where(['app_id' => $this->appId, 'is_addon' => WhetherEnum::DISABLED])
             ->andWhere(['>=', 'status', StatusEnum::DISABLED])
             ->orderBy('sort asc, created_at asc');
         $dataProvider = new ActiveDataProvider([
@@ -65,7 +65,7 @@ class AuthItemController extends BaseController
         $model = $this->findModel($id);
         $model->pid = $request->get('pid', null) ?? $model->pid; // 父id
         $model->app_id = $this->appId;
-        $model->type = TypeEnum::DEFAULT;
+        $model->is_addon = WhetherEnum::DISABLED;
 
         // ajax 校验
         $this->activeFormValidate($model);

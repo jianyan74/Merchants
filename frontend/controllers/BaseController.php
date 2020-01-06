@@ -1,6 +1,6 @@
 <?php
 
-namespace addons\RfMerchants\frontend\controllers;
+namespace addons\Merchants\frontend\controllers;
 
 use Yii;
 use common\controllers\AddonsController;
@@ -9,12 +9,12 @@ use common\controllers\AddonsController;
  * 默认控制器
  *
  * Class DefaultController
- * @package addons\RfMerchants\frontend\controllers
+ * @package addons\Merchants\frontend\controllers
  */
 class BaseController extends AddonsController
 {
     /**
     * @var string
     */
-    public $layout = "@addons/RfMerchants/frontend/views/layouts/main";
+    public $layout = "@addons/Merchants/frontend/views/layouts/main";
 }

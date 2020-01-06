@@ -1,6 +1,6 @@
 <?php
 
-namespace addons\RfMerchants;
+namespace addons\Merchants;
 
 use Yii;
 use common\interfaces\AddonWidget;
@@ -9,7 +9,7 @@ use common\interfaces\AddonWidget;
  * 微信消息处理
  *
  * Class AddonMessage
- * @package addons\RfMerchants */
+ * @package addons\Merchants */
 class AddonMessage implements AddonWidget
 {
     /**

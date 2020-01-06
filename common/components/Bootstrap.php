@@ -1,6 +1,6 @@
 <?php
 
-namespace addons\RfMerchants\common\components;
+namespace addons\Merchants\common\components;
 
 use Yii;
 use common\interfaces\AddonWidget;
@@ -9,8 +9,7 @@ use common\interfaces\AddonWidget;
  * Bootstrap
  *
  * Class Bootstrap
- * @package addons\RfMerchants\common\config
- */
+ * @package addons\Merchants\common\config */
 class Bootstrap implements AddonWidget
 {
     /**

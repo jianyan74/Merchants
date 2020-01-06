@@ -1,6 +1,6 @@
 <?php
 
-namespace addons\RfMerchants\backend\forms;
+namespace addons\Merchants\backend\forms;
 
 use Yii;
 use yii\base\Model;
@@ -11,7 +11,7 @@ use common\enums\AppEnum;
 
 /**
  * Class MemberForm
- * @package addons\RfMerchants\backend\forms
+ * @package addons\Merchants\backend\forms
  * @author jianyan74 <751393839@qq.com>
  */
 class MemberForm extends Model

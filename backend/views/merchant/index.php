@@ -32,6 +32,15 @@ $this->params['breadcrumbs'][] = ['label' => $this->title];
                         'id',
                         'title',
                         [
+                            'label' => '账户金额',
+                            'filter' => false, //不显示搜索框
+                            'value' => function ($model) {
+                                return "剩余：" . $model->user_money . '<br>' .
+                                    "累计：" . $model->accumulate_money;
+                            },
+                            'format' => 'raw',
+                        ],
+                        [
                             'header' => "操作",
                             'class' => 'yii\grid\ActionColumn',
                             'template'=> '{member} {role} {ajax-edit} {status} {destroy}',

@@ -1,19 +1,19 @@
 <?php
 
-namespace addons\RfMerchants\backend\controllers;
+namespace addons\Merchants\backend\controllers;
 
 use Yii;
 use common\models\base\SearchModel;
-use common\components\Curd;
+use common\traits\Curd;
 use common\models\merchant\Member;
 use common\enums\StatusEnum;
 use common\enums\AppEnum;
 use common\helpers\ArrayHelper;
-use addons\RfMerchants\backend\forms\MemberForm;
+use addons\Merchants\backend\forms\MemberForm;
 
 /**
  * Class MemberController
- * @package addons\RfMerchants\backend\controllers
+ * @package addons\Merchants\backend\controllers
  * @author jianyan74 <751393839@qq.com>
  */
 class MemberController extends BaseController

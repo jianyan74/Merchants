@@ -1,10 +1,23 @@
 <?php
 
 return [
-    // ----------------------- 权限配置 ----------------------- //
 
-    'authItem' => [
-
+    // ----------------------- 菜单配置 ----------------------- //
+    'config' => [
+        // 菜单配置
+        'menu' => [
+            'location' => 'addons', // default:系统顶部菜单;addons:应用中心菜单
+            'icon' => 'fa fa-puzzle-piece',
+        ],
+        // 子模块配置
+        'modules' => [
+            'v1' => [
+                'class' => 'addons\Merchants\oauth2\modules\v1\Module',
+            ],
+            'v2' => [
+                'class' => 'addons\Merchants\oauth2\modules\v2\Module',
+            ],
+        ],
     ],
 
     // ----------------------- 快捷入口 ----------------------- //
@@ -14,12 +27,14 @@ return [
     ],
 
     // ----------------------- 菜单配置 ----------------------- //
-    'menuConfig' => [
-         'location' => 'addons', // default:系统顶部菜单;addons:应用中心菜单
-         'icon' => 'fa fa-puzzle-piece',
-    ],
 
     'menu' => [
+
+    ],
+
+    // ----------------------- 权限配置 ----------------------- //
+
+    'authItem' => [
 
     ],
 ];

@@ -1,17 +1,17 @@
 <?php
 
-namespace addons\RfMerchants\merchant\controllers;
+namespace addons\Merchants\merchant\controllers;
 
 use Yii;
 use common\helpers\ArrayHelper;
 use merchant\interfaces\AddonsSetting;
-use addons\RfMerchants\common\models\SettingForm;
+use addons\Merchants\common\models\SettingForm;
 
 /**
  * 参数设置
  *
  * Class SettingController
- * @package addons\RfMerchants\merchant\controllers
+ * @package addons\Merchants\merchant\controllers
  */
 class SettingController extends BaseController implements AddonsSetting
 {
@@ -30,19 +30,6 @@ class SettingController extends BaseController implements AddonsSetting
 
         return $this->render('display',[
             'model' => $model,
-        ]);
-    }
-
-    /**
-     * 钩子
-     *
-     * @param array $param
-     * @return mixed|string
-     */
-    public function actionHook($param = [])
-    {
-        return $this->render('hook', [
-            'param' => $param
         ]);
     }
 }

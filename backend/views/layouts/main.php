@@ -1,6 +1,6 @@
 <?php
 
-use addons\RfMerchants\backend\assets\AppAsset;
+use addons\Merchants\backend\assets\AppAsset;
 use common\helpers\Html;
 
 AppAsset::register($this);

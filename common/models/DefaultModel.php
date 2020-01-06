@@ -1,6 +1,6 @@
 <?php
 
-namespace addons\RfMerchants\common\models;
+namespace addons\Merchants\common\models;
 
 use Yii;
 use yii\db\ActiveRecord;

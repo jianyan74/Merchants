@@ -1,20 +1,20 @@
 <?php
 
-namespace addons\RfMerchants\backend\controllers;
+namespace addons\Merchants\backend\controllers;
 
 use Yii;
 use yii\data\ActiveDataProvider;
 use common\enums\StatusEnum;
 use common\helpers\ArrayHelper;
-use common\components\Curd;
+use common\traits\Curd;
 use common\models\common\AuthRole;
 use common\enums\AppEnum;
-use common\enums\TypeEnum;
+use common\enums\WhetherEnum;
 use common\helpers\ResultHelper;
 
 /**
  * Class RoleController
- * @package addons\RfMerchants\backend\controllers
+ * @package addons\Merchants\backend\controllers
  * @author jianyan74 <751393839@qq.com>
  */
 class RoleController extends BaseController
@@ -85,8 +85,8 @@ class RoleController extends BaseController
             }
 
             // 创建角色关联的权限信息
-            Yii::$app->services->authRole->accredit($model->id, $data['userTreeIds'] ?? [], TypeEnum::DEFAULT, $this->appId);
-            Yii::$app->services->authRole->accredit($model->id, $data['plugTreeIds'] ?? [], TypeEnum::ADDONS, $this->appId);
+            Yii::$app->services->authRole->accredit($model->id, $data['userTreeIds'] ?? [], WhetherEnum::DISABLED, $this->appId);
+            Yii::$app->services->authRole->accredit($model->id, $data['plugTreeIds'] ?? [], WhetherEnum::ENABLED, $this->appId);
 
             return ResultHelper::json(200, '提交成功');
         }

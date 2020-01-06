@@ -1,3 +1,3 @@
 <?php
 
-echo '这是 RfMerchants 的钩子';
+echo '这是 Merchants 的钩子';

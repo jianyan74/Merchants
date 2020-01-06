@@ -1,16 +1,16 @@
 <?php
 
-namespace addons\RfMerchants\api\controllers\v2;
+namespace addons\Merchants\api\modules\v2\controllers;
 
 use Yii;
 use api\controllers\OnAuthController;
-use api\controllers\UserAuthController;
 
 /**
  * 默认控制器
  *
  * Class DefaultController
- * @package addons\RfMerchants\api\controllers\v2 */
+ * @package addons\Merchants\api\modules\v2\controllers
+ */
 class DefaultController extends OnAuthController
 {
     public $modelClass = '';
@@ -23,7 +23,7 @@ class DefaultController extends OnAuthController
     *
     * @var array
     */
-    protected $optional = ['index'];
+    protected $authOptional = ['index'];
 
     /**
     * 首页

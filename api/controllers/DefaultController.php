@@ -1,15 +1,15 @@
 <?php
 
-namespace addons\Merchants\oauth2\controllers;
+namespace addons\Merchants\api\controllers;
 
 use Yii;
-use oauth2\controllers\OnAuthController;
+use api\controllers\OnAuthController;
 
 /**
  * 默认控制器
  *
  * Class DefaultController
- * @package addons\Merchants\oauth2\controllers
+ * @package addons\Merchants\api\controllers
  */
 class DefaultController extends OnAuthController
 {
